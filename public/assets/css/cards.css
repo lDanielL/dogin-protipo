@@ -219,4 +219,5 @@ h3 {
   width: calc(40vw - 120px);
   height: calc(100vh - 160px);
   overflow: auto;
+  min-width: 29vw;
 }
