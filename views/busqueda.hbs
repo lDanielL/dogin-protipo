@@ -4,7 +4,9 @@
 <head>
   <meta charset=utf-8 />
   <title>{{titulo}} - Búsqueda</title>
-  	{{>css}}
+  {{>css}}
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 
@@ -12,15 +14,18 @@
 
   {{> navbar}}
 
-  <div>
-    {{> filtros}}
-    <section class="sec-cards">
-      {{> cards}}
+  <div class="row">
+    <div class="col-md-4">
+      {{> filtros}}
+      <section class="sec-cards">
+        {{> cards}}
 
-    </section>
-    <section>
-      {{>map}}
-    </section>
+    </div>
+    <div class="col-md-8">
+      {{> map}}
+
+    </div>
+
   </div>
 
 </body>
