@@ -1,0 +1,60 @@
+.button-f {
+  display: inline-block;
+  padding-top: 0.6rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: .2rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  white-space: nowrap;
+  margin-right: 2px;
+  width: 8vw;
+  height: 4vh;
+  margin-top: 5px;
+}
+
+.button-f:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button-f:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #f55104;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.button-f:hover {
+  color: #fff;
+}
+
+.button-f:hover:before {
+  width: 100%;
+}
+
+
+
+
+
+.div-filtros {
+  display: flex;
+  text-align: center;
+}

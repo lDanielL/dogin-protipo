@@ -1,7 +1,46 @@
-<nav id="menu">
-    <ul class="links">
-        <li><a href="/">Home</a></li>
-        <li><a href="generic">Generic</a></li>
-        <li><a href="elements">Elements</a></li>
-    </ul>
-</nav>
+<div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+                <img src="public/dogin.png" class="logo-dogin">
+    <a class="navbar-brand" href="#">DogIn</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/busqueda">Encontrar un cuidador <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/registro-cuidador" >Convertirme en cuidador</a>
+           
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayuda</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                    <li class="dropdown-item" href="#"><a>Action 1</a></li>
+                    <li class="dropdown-item dropdown">
+                        <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
+                            <li class="dropdown-item" href="#"><a>Action 1.1</a></li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
+                                    <li class="dropdown-item" href="#"><a>Action 1.1.1</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" target="_blank">Salir</a>
+           
+            </li>
+
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar ..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </div>
+</div>
+
